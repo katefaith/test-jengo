@@ -1,0 +1,137 @@
+@font-face {
+  font-family: "Open Sans";
+  src: url("fonts/OpenSans-Regular.ttf") format("TrueType");
+  font-style: normal;
+  font-weight: normal;
+}
+
+body {
+  margin: 0;
+  font-size: 12px;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.5;
+  color: #333333;;
+}
+
+img {
+  display: block;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+.container {
+  min-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.adv {
+  margin: 24px 16px;
+}
+
+.adv-item {
+  display: flex;
+  margin-bottom: 12px;
+  border-radius: 4px;
+}
+
+.adv-item__content {
+  margin-left: 12px;
+}
+
+.adv-item__title {
+  margin: 0;
+  margin-bottom: 4px;
+  font-size: 14px;
+  line-height: 1.285;
+  font-weight: bold;
+}
+
+.adv-item__description {
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  body {
+    color: #ffffff;
+  }
+
+  .container {
+    max-width: 768px;
+  }
+
+  .adv {
+    margin: 100px 82px;
+  }
+
+  .adv__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .adv-item {
+    position: relative;
+    margin-bottom: 24px;
+  }
+
+  .adv-item__content {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin: 0;
+    height: 100%;
+    left: 0;
+    right: 0;
+    background: linear-gradient(0deg, rgba(34, 34, 34, 0.85) 30.64%, rgba(38, 38, 38, 0) 81.78%);
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .adv-item:hover{
+    color: lightgrey;
+  }
+
+  .adv-item__title {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .adv-item__description {
+    margin-bottom: 12px;
+  }
+
+  .adv-item__image img {
+    width: 290px;
+    height: 208px;
+    overflow:hidden;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+  }
+
+  .adv {
+    margin-left: 138px;
+    margin-right: 138px;
+  }
+
+  .adv-item__image img {
+    width: 273px;
+    height: 196px;
+  }
+}
